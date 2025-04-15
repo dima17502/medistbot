@@ -21,7 +21,8 @@ init_db()
 
 settings = configparser.ConfigParser()
 
-bot = telebot.TeleBot('6481954084:AAHnbj1zyPF6OY5aqdILvllqdlBzbDvplJA', parse_mode='html')
+telebot_api_token = token
+bot = telebot.TeleBot(telebot_api_token, parse_mode='html')
 
 hex_dict = {"a":10,"b":11,"c":12,"d":13,"e":14,"f":15, "10":"a","11":"b","12":"c","13":"d","14":"e","15":"f"}
 users = {}
